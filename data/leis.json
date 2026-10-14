@@ -1,0 +1,122 @@
+{
+  "versao": 1,
+  "observacao": "Índice inicial de referências. Verifique conteúdo e vigência na fonte oficial.",
+  "leis": [
+    {
+      "id": "CF-1988",
+      "tipo": "Constituição",
+      "numero": "1988",
+      "ano": 1988,
+      "titulo": "Constituição da República Federativa do Brasil",
+      "temas": [
+        "Constitucional",
+        "Direitos fundamentais",
+        "Administração pública"
+      ],
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+      "relacoes": []
+    },
+    {
+      "id": "L-14133-2021",
+      "tipo": "Lei",
+      "numero": "14.133",
+      "ano": 2021,
+      "titulo": "Lei de Licitações e Contratos Administrativos",
+      "temas": [
+        "Licitações",
+        "Contratos",
+        "Administração pública"
+      ],
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm",
+      "relacoes": [
+        {
+          "alvo": "L-8666-1993",
+          "tipo": "revoga",
+          "fundamento": "Art. 193, inciso II, da Lei 14.133/2021; observar regras e período de transição."
+        }
+      ]
+    },
+    {
+      "id": "L-8666-1993",
+      "tipo": "Lei",
+      "numero": "8.666",
+      "ano": 1993,
+      "titulo": "Normas de licitações e contratos da Administração Pública (legislação histórica)",
+      "temas": [
+        "Licitações",
+        "Contratos",
+        "Histórico"
+      ],
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l8666cons.htm",
+      "relacoes": []
+    },
+    {
+      "id": "L-13709-2018",
+      "tipo": "Lei",
+      "numero": "13.709",
+      "ano": 2018,
+      "titulo": "Lei Geral de Proteção de Dados Pessoais (LGPD)",
+      "temas": [
+        "Proteção de dados",
+        "Privacidade",
+        "Tecnologia"
+      ],
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+      "relacoes": []
+    },
+    {
+      "id": "L-12527-2011",
+      "tipo": "Lei",
+      "numero": "12.527",
+      "ano": 2011,
+      "titulo": "Lei de Acesso à Informação (LAI)",
+      "temas": [
+        "Transparência",
+        "Administração pública",
+        "Acesso à informação"
+      ],
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm",
+      "relacoes": []
+    },
+    {
+      "id": "L-10406-2002",
+      "tipo": "Lei",
+      "numero": "10.406",
+      "ano": 2002,
+      "titulo": "Código Civil",
+      "temas": [
+        "Direito civil",
+        "Contratos",
+        "Obrigações"
+      ],
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+      "relacoes": []
+    },
+    {
+      "id": "L-13105-2015",
+      "tipo": "Lei",
+      "numero": "13.105",
+      "ano": 2015,
+      "titulo": "Código de Processo Civil",
+      "temas": [
+        "Processo civil",
+        "Direito processual"
+      ],
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm",
+      "relacoes": []
+    },
+    {
+      "id": "L-8078-1990",
+      "tipo": "Lei",
+      "numero": "8.078",
+      "ano": 1990,
+      "titulo": "Código de Defesa do Consumidor",
+      "temas": [
+        "Consumidor",
+        "Direito civil"
+      ],
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "relacoes": []
+    }
+  ]
+}
