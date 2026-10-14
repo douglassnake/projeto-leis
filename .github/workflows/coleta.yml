@@ -21,11 +21,13 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Verificar links oficiais
         run: python scripts/coletar.py
+      - name: Descobrir referências de novas leis
+        run: python scripts/descobrir_leis.py
       - name: Registrar relatório quando houver mudança
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/coleta.json
+          git add data/coleta.json data/novidades.json
           if ! git diff --cached --quiet; then
             git commit -m "data: registrar conferência diária de fontes"
             git push
