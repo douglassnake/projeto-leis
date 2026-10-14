@@ -36,6 +36,13 @@ class TestPortal(unittest.TestCase):
             with self.subTest(trecho=trecho):
                 self.assertIn(trecho, self.html)
 
+    def test_pagina_de_dispositivos(self):
+        artigos = (ROOT / "dispositivos.html").read_text(encoding="utf-8")
+        for trecho in ('data/dispositivos.json', 'id="busca"', 'id="resultados"', 'Conferir no Planalto', 'extração automática'):
+            with self.subTest(trecho=trecho):
+                self.assertIn(trecho, artigos)
+        self.assertIn('dispositivos.html', self.html)
+
     def test_sem_dependencias_externas_executaveis(self):
         self.assertEqual(self.parser.nav, [])
 
