@@ -8,9 +8,9 @@ Pesquisa jurídica brasileira com fontes oficiais, busca rápida, conexões norm
 - Catálogo inicial de normas federais com links para textos oficiais.
 - Pesquisa por assunto, número, ano, ementa e termos.
 - Referências cruzadas **curadas** e identificadas como tais; nenhuma conclusão sobre vigência é produzida automaticamente.
-- Coletor Python para conferir acessibilidade e metadados de fontes oficiais.
+- Coletor Python para verificar acessibilidade das fontes e descobrir novas referências de leis ordinárias de 2026 no índice oficial do Planalto.
 - GitHub Actions: testes, coleta diária e publicação do portal.
-- Dados públicos em `data/leis.json` e log da última coleta em `data/coleta.json`.
+- Dados públicos em `data/leis.json`, referências incrementais em `data/novidades.json` e log de acessibilidade em `data/coleta.json`.
 
 ## Como usar
 
@@ -23,19 +23,20 @@ python -m http.server 8000
 # http://localhost:8000
 python -m unittest discover -s tests -v
 python scripts/coletar.py
+python scripts/descobrir_leis.py
 ```
 
 ## Limites jurídicos importantes
 
 - Esta primeira versão é um **índice de referências**: para uso jurídico, confira o texto consolidado, alterações e a vigência na fonte oficial.
-- O coletor inicial confere páginas de referência; **não** garante cobertura integral do Diário Oficial nem atualização de todos os atos do país.
+- O coletor confere páginas e descobre links de leis de 2026; **não** garante cobertura integral do Diário Oficial, nem valida ementa, publicação ou vigência.
 - Conexões normativas somente entram no índice após inclusão explícita com fundamento verificável.
 - Datas de conferência técnica não significam verificação jurídica da vigência.
 - Não digite dados pessoais, sigilosos ou de clientes nesta versão pública e sem autenticação.
 
 ## Próximos marcos
 
-1. Ingestão incremental das publicações do DOU via fontes autorizadas e deduplicação por identificadores oficiais.
+1. Ampliar a descoberta incremental além das leis ordinárias de 2026, integrar publicações do DOU via fontes autorizadas e deduplicar por identificadores oficiais.
 2. Versionamento artigo a artigo, identificação auditável de alterações, revogações e vigência temporal.
 3. Busca híbrida/semântica com citações, autenticação, alertas e trilhas de auditoria.
 4. Backend e PostgreSQL para produção comercial (GitHub Pages serve apenas site estático).
