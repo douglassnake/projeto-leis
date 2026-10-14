@@ -1,5 +1,56 @@
 {
-  "executado_em": null,
-  "verificacoes": [],
-  "nota": "Coletor ainda não executado pelo GitHub Actions."
+  "executado_em": "2026-10-14T17:44:45.325656+00:00",
+  "total": 8,
+  "acessiveis": 8,
+  "verificacoes": [
+    {
+      "id": "CF-1988",
+      "http": 200,
+      "final_url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+      "acessivel": true
+    },
+    {
+      "id": "L-14133-2021",
+      "http": 200,
+      "final_url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm",
+      "acessivel": true
+    },
+    {
+      "id": "L-8666-1993",
+      "http": 200,
+      "final_url": "https://www.planalto.gov.br/ccivil_03/leis/l8666cons.htm",
+      "acessivel": true
+    },
+    {
+      "id": "L-13709-2018",
+      "http": 200,
+      "final_url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+      "acessivel": true
+    },
+    {
+      "id": "L-12527-2011",
+      "http": 200,
+      "final_url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm",
+      "acessivel": true
+    },
+    {
+      "id": "L-10406-2002",
+      "http": 200,
+      "final_url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+      "acessivel": true
+    },
+    {
+      "id": "L-13105-2015",
+      "http": 200,
+      "final_url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm",
+      "acessivel": true
+    },
+    {
+      "id": "L-8078-1990",
+      "http": 200,
+      "final_url": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+      "acessivel": true
+    }
+  ],
+  "nota": "Checagem de acesso HTTP, NÃO é validação da vigência, integralidade nem atualização legal."
 }
