@@ -50,3 +50,23 @@ python scripts/descobrir_leis.py
 - Senado: https://www12.senado.leg.br/dados-abertos/
 
 Licença de software: MIT. Conteúdos oficiais permanecem sujeitos às respectivas regras de uso e atribuição.
+
+## Estado verificado em 14/10/2026
+
+- O arquivo de descoberta automática continha **1.554 referências** de leis ordinárias federais de 2020 a 2026, com sete índices consultados e zero falhas reportadas naquela coleta.
+- O portal exibe a busca por metadados, conexões curadas, gráfico e monitor de novas referências.
+- Referências descobertas automaticamente ainda **não** contêm o texto integral de artigos, ementas validadas nem análise de vigência.
+- A interface ainda é estática e pública: não há contas, dados privados de clientes, IA jurídica, cobrança, banco transacional ou auditoria profissional.
+- O workflow de publicação depende da habilitação e permissões do GitHub Pages. Os testes de CI e o site ao vivo devem ser verificados na aba Actions após cada atualização.
+
+## Critérios para o produto comercial
+
+1. Ingestão integral e licenciada/autorizada de normas federais, estaduais e municipais, com identificação de fonte e versão.
+2. Parser de artigos, parágrafos, incisos, alíneas e datas de vigência, com controle de erros e revisão.
+3. Conexões automatizadas com evidência normativa, classificação de confiança e fluxo de validação.
+4. Consulta histórica e auditoria reprodutível, incluindo alterações e revogações.
+5. API autenticada, PostgreSQL, políticas de privacidade, controles LGPD, backup/recuperação e rate limits.
+6. Assistente RAG com citação ao dispositivo, testes anti-alucinação e explicitação de incerteza.
+7. Testes de integração, monitoramento operacional, termos de uso e conformidade comercial.
+
+**Não confundir o MVP de referência legislativa com um sistema jurídico validado para orientar decisões profissionais sem conferir as fontes oficiais.**
