@@ -27,12 +27,12 @@ class TestPortal(unittest.TestCase):
         cls.parser.feed(cls.html)
 
     def test_elementos_essenciais(self):
-        for ident in ("query", "searchForm", "tema", "results", "total", "count", "status", "graphSelect", "graphCanvas", "graphDetails"):
+        for ident in ("query", "searchForm", "tema", "results", "total", "count", "status", "graphSelect", "graphCanvas", "graphDetails", "monitorTotal", "monitorData", "monitorFalhas", "monitorItens"):
             with self.subTest(elemento=ident):
                 self.assertIn(ident, self.parser.ids)
 
     def test_componentes_pesquisa_e_mapa(self):
-        for trecho in ("function render()", "function desenharGrafo()", "data/leis.json", "data/novidades.json", "aria-label", "noopener noreferrer"):
+        for trecho in ("function render()", "function desenharGrafo()", "function painelAtualizacoes(info)", "data/leis.json", "data/novidades.json", "aria-label", "noopener noreferrer"):
             with self.subTest(trecho=trecho):
                 self.assertIn(trecho, self.html)
 
