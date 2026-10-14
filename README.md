@@ -70,3 +70,12 @@ Licença de software: MIT. Conteúdos oficiais permanecem sujeitos às respectiv
 7. Testes de integração, monitoramento operacional, termos de uso e conformidade comercial.
 
 **Não confundir o MVP de referência legislativa com um sistema jurídico validado para orientar decisões profissionais sem conferir as fontes oficiais.**
+
+## Monitoramento técnico de dispositivos (MVP)
+
+- `scripts/indexar_dispositivos.py` realiza extração experimental por artigo em normas selecionadas, com arquivo `data/dispositivos.json`.
+- `scripts/comparar_versoes.py` calcula SHA-256 do texto normalizado de cada artigo e mantém `data/revisoes.json` com assinaturas, diferenças e pendências.
+- Alterações no resultado do parser podem gerar alertas falsos; a identificação de alteração legislativa depende de revisão da fonte oficial.
+- Artigos ausentes em uma coleta são classificados como ausentes **na extração**, nunca automaticamente como revogados.
+- A atualização é agendada semanalmente em `.github/workflows/dispositivos.yml`; a execução real e os testes devem ser confirmados em Actions.
+- O painel experimental fica em `dispositivos.html` e exibe o total monitorado e as diferenças pendentes.
