@@ -14,7 +14,13 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
 
-BASE = "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/_leis2026.htm"
+YEARS = range(2020, 2027)
+def url_indice(ano: int) -> str:
+    inicio = ((ano - 1) // 4) * 4 + 1
+    fim = inicio + 3
+    return f"https://www.planalto.gov.br/ccivil_03/_ato{inicio}-{fim}/{ano}/lei/_leis{ano}.htm"
+
+BASE = url_indice(2026)
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "novidades.json"
 LAW_RE = re.compile(r"(?:^|/)l(\d{4,6})(?:\.htm|\.html)$", re.I)
@@ -39,7 +45,7 @@ class LinkParser(HTMLParser):
             self.links.append((self.href, data.strip()))
 
 
-def extrair(html: str, base: str = BASE) -> list[dict]:
+def extrair(html: str, base: str = BASE, ano: int = 2026) -> list[dict]:
     parser = LinkParser()
     parser.feed(html)
     encontrados = {}
@@ -52,8 +58,8 @@ def extrair(html: str, base: str = BASE) -> list[dict]:
         if not match:
             continue
         numero = int(match.group(1))
-        ident = f"L-{numero}-2026"
-        encontrados[ident] = {"id": ident, "numero": numero, "ano": 2026, "url": url, "rotulo": f"Lei nº {numero:,}".replace(",", ".")}
+        ident = f"L-{numero}-{ano}"
+        encontrados[ident] = {"id": ident, "numero": numero, "ano": ano, "url": url, "rotulo": f"Lei nº {numero:,}".replace(",", ".")}
     return sorted(encontrados.values(), key=lambda item: item["numero"], reverse=True)
 
 
