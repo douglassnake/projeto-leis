@@ -1,5 +1,10 @@
 name: Conferir fontes oficiais
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/descobrir_leis.py'
+      - '.github/workflows/coleta.yml'
   schedule:
     - cron: '23 9 * * *'
   workflow_dispatch:
