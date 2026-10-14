@@ -31,7 +31,7 @@ jobs:
         run: |
           mkdir -p _site/data
           cp index.html dispositivos.html _site/
-          cp data/leis.json data/novidades.json data/coleta.json data/dispositivos.json _site/data/
+          cp data/leis.json data/novidades.json data/coleta.json data/dispositivos.json data/revisoes.json _site/data/
           touch _site/.nojekyll
       - name: Empacotar site
         uses: actions/upload-pages-artifact@v3
