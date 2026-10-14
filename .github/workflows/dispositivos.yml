@@ -26,11 +26,13 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Extrair artigos das fontes oficiais
         run: python scripts/indexar_dispositivos.py
+      - name: Comparar assinaturas e registrar revisão pendente
+        run: python scripts/comparar_versoes.py
       - name: Persistir índice experimental
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/dispositivos.json
+          git add data/dispositivos.json data/revisoes.json
           if ! git diff --cached --quiet; then
             git commit -m "data: atualizar índice experimental de dispositivos"
             git pull --rebase origin main
