@@ -1,5 +1,10 @@
 name: Indexar dispositivos
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/indexar_dispositivos.py'
+      - '.github/workflows/dispositivos.yml'
   schedule:
     - cron: '47 10 * * 1'
   workflow_dispatch:
