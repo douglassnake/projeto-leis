@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Projeto Leis: pesquisa em referências legislativas federais e conexões documentadas.">
+<title>Projeto Leis — Pesquisa jurídica</title>
+<style>
+:root{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:#e5eefb;background:#08111f;font-synthesis:none}*{box-sizing:border-box}body{margin:0}a{color:#8ac5ff}button,input,select{font:inherit}button{cursor:pointer}.wrap{max-width:1120px;margin:auto;padding:0 22px}header{border-bottom:1px solid #243349;background:#0c182b}.top{height:75px;display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{display:flex;gap:13px;align-items:center;text-decoration:none;color:#fff;font-weight:800;font-size:21px}.mark{width:39px;height:39px;background:#2563eb;border-radius:12px;display:grid;place-items:center}.mini{font-size:12px;color:#a7bad1}main{padding-top:53px;padding-bottom:75px}.pill{display:inline-flex;border:1px solid #3e5c81;color:#b6d8ff;padding:7px 12px;border-radius:99px;font-size:12px}h1{font-size:clamp(34px,6vw,58px);line-height:1.12;letter-spacing:-1.6px;margin:23px 0 12px}h1 span{color:#67aaff}.intro{color:#a9bad1;font-size:17px;line-height:1.65;max-width:780px}.search{display:flex;background:#14243b;border:1px solid #45617f;padding:8px;border-radius:14px;gap:8px;margin:30px 0 16px}.search input{background:transparent;color:white;border:0;outline:0;flex:1;min-width:0;padding:12px;font-size:16px}.search button,.primary{border:0;background:#2563eb;color:#fff;border-radius:9px;padding:12px 21px;font-weight:700}.filters{display:flex;gap:9px;flex-wrap:wrap;align-items:center}.filters select,.filters button{border:1px solid #38506c;color:#d8e7f9;background:#14243b;border-radius:8px;padding:9px}.stats{display:flex;gap:14px;flex-wrap:wrap;margin:33px 0;color:#b7c9dd;font-size:13px}.stats b{color:white}h2{font-size:23px;margin:0}.section{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:22px 0}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(295px,1fr));gap:15px}.card{background:#101e32;border:1px solid #2b3e56;border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:12px}.card:hover{border-color:#6087be}.meta{color:#8dbfff;text-transform:uppercase;letter-spacing:.8px;font-size:11px;font-weight:800}.card h3{margin:0;font-size:20px;line-height:1.35}.card p{margin:0;color:#bbcce0;line-height:1.55}.tags{display:flex;flex-wrap:wrap;gap:6px}.tag{background:#233750;color:#c4daf7;border-radius:30px;padding:5px 9px;font-size:11px}.actions{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;padding-top:9px}.actions a{font-weight:700;text-decoration:none}.actions button{border:1px solid #405b79;background:transparent;color:#cbdcf1;padding:8px 10px;border-radius:8px}.notice{border-left:3px solid #61a9fa;background:#132741;color:#bcd0e6;border-radius:8px;padding:15px 17px;margin-top:31px;line-height:1.65}.notice strong{color:white}#status{color:#a8bacf;font-size:13px}footer{border-top:1px solid #25364d;padding:27px 0;color:#90a7c4;font-size:13px}.empty{padding:35px;border:1px dashed #465872;border-radius:13px;color:#d3e2f6;grid-column:1/-1}.detail{border:1px solid #466083;background:#13253e;border-radius:12px;padding:17px;margin-top:12px;font-size:13px;line-height:1.65}.detail strong{color:#fff}input:focus-visible,button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #f6bd60;outline-offset:2px}@media(max-width:620px){.top{height:auto;padding:19px 0;flex-wrap:wrap}.search{flex-direction:column}.search button{width:100%}main{padding-top:35px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap top"><a class="brand" href="./"><span class="mark" aria-hidden="true">⚖</span> Projeto Leis</a><span class="mini">Pesquisa jurídica • fontes oficiais</span></div></header>
+<main class="wrap">
+<span class="pill">Base inicial de referências federais</span>
+<h1>Encontre a legislação.<br><span>Explore suas conexões.</span></h1>
+<p class="intro">Pesquise leis por número, ano, nome ou assunto. Consulte as fontes oficiais e visualize relações normativas com fundamentação identificada.</p>
+<form id="searchForm" class="search" role="search"><input id="query" type="search" autocomplete="off" aria-label="Pesquisar leis" placeholder="Ex.: licitações, LGPD, 14.133/2021"><button type="submit">Pesquisar →</button></form>
+<div class="filters"><label for="tema" class="mini">Filtrar por assunto:</label><select id="tema"><option value="">Todos os assuntos</option></select><button type="button" id="limpar">Limpar filtros</button></div>
+<div class="stats"><span>Normas indexadas: <b id="total">—</b></span><span>Resultados: <b id="count">—</b></span><span>Fonte: <b>Planalto</b></span></div>
+<div class="section"><h2>Resultados</h2><span id="status" role="status" aria-live="polite">Carregando catálogo...</span></div>
+<section id="results" class="grid" aria-label="Resultados de pesquisa"></section>
+<div class="notice"><strong>Informação jurídica:</strong> este portal é um índice inicial, não uma base legislativa consolidada. Consulte sempre a redação, a vigência e os efeitos temporais nas fontes oficiais. As conexões exibidas são referências documentadas, não pareceres jurídicos. Não inclua dados confidenciais nesta interface.</div>
+</main>
+<footer><div class="wrap">Projeto Leis · Software livre · <a href="https://www.lexml.gov.br/" target="_blank" rel="noopener noreferrer">LexML</a> · <a href="https://www4.planalto.gov.br/legislacao" target="_blank" rel="noopener noreferrer">Legislação federal</a> · <a href="https://github.com/douglassnake/projeto-leis" target="_blank" rel="noopener noreferrer">GitHub</a></div></footer>
+<script>
+'use strict';
+let catalog=[];
+const $=id=>document.getElementById(id);
+const normalizar=s=>String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
+function node(tag,cls,value){const el=document.createElement(tag);if(cls)el.className=cls;if(value!==undefined)el.textContent=value;return el}
+function render(){
+ const q=normalizar($('query').value), t=$('tema').value;
+ const found=catalog.filter(l=>(!t||l.temas.includes(t))&&(!q||normalizar([l.tipo,l.numero,l.ano,l.titulo,...l.temas].join(' ')).includes(q)));
+ $('total').textContent=catalog.length;$('count').textContent=found.length;
+ const area=$('results');area.replaceChildren();
+ if(!found.length){area.append(node('div','empty','Nenhuma norma encontrada. Tente outro número, ano ou assunto.'));return}
+ found.forEach(l=>{
+ const card=node('article','card');card.append(node('div','meta',l.tipo+' Nº '+l.numero+' · '+l.ano));
+ card.append(node('h3','',l.titulo));
+ const tags=node('div','tags');l.temas.forEach(tag=>tags.append(node('span','tag',tag)));card.append(tags);
+ const actions=node('div','actions');const a=node('a','', 'Consultar fonte oficial ↗');a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';actions.append(a);
+ const b=node('button','', 'Conexões ('+l.relacoes.length+')');b.type='button';b.setAttribute('aria-expanded','false');actions.append(b);card.append(actions);
+ const detail=node('div','detail');detail.hidden=true;
+ if(l.relacoes.length){l.relacoes.forEach(r=>{const ref=catalog.find(x=>x.id===r.alvo);const line=node('p','',r.tipo+': '+(ref?ref.titulo:r.alvo)+' — '+r.fundamento);detail.append(line)})}
+ else detail.append(node('p','','Nenhuma conexão cadastrada e verificada neste índice inicial. Isso não significa inexistência de relações jurídicas.'));
+ b.addEventListener('click',()=>{detail.hidden=!detail.hidden;b.setAttribute('aria-expanded',String(!detail.hidden))});
+ card.append(detail);area.append(card)
+ });
+}
+async function carregar(){try{const resp=await fetch('data/leis.json',{cache:'no-store'});if(!resp.ok)throw Error('HTTP '+resp.status);const data=await resp.json();if(!Array.isArray(data.leis))throw Error('Formato inválido');catalog=data.leis;const temas=[...new Set(catalog.flatMap(l=>l.temas))].sort((a,b)=>a.localeCompare(b,'pt-BR'));temas.forEach(t=>{const o=node('option','',t);o.value=t;$('tema').append(o)});$('status').textContent='Índice demonstrativo — não cobre toda a legislação';render()}catch(err){$('status').textContent='Falha ao carregar dados';$('results').append(node('div','empty','Não foi possível abrir o catálogo. Use um servidor HTTP local ou consulte o repositório.'))}}
+$('searchForm').addEventListener('submit',e=>{e.preventDefault();render()});$('query').addEventListener('input',render);$('tema').addEventListener('change',render);$('limpar').addEventListener('click',()=>{$('query').value='';$('tema').value='';render();$('query').focus()});carregar();
+</script>
+</body></html>
