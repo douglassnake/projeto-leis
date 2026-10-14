@@ -23,8 +23,10 @@ jobs:
           python-version: '3.12'
       - name: Testar dados antes de publicar
         run: python -m unittest discover -s tests -v
-      - name: Configurar Pages
+      - name: Configurar e habilitar Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Preparar apenas arquivos públicos
         run: |
           mkdir -p _site/data
