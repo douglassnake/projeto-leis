@@ -1,13 +1,13 @@
 {
   "tipo": "extracao_experimental_de_texto",
   "aviso": "Texto extraído automaticamente para localização; estrutura, integridade, redação e vigência NÃO validadas. Confira fonte oficial.",
-  "gerado_em": "2026-10-14T17:52:40.900311+00:00",
+  "gerado_em": "2026-10-14T17:55:21.413683+00:00",
   "falhas": [],
   "normas": [
     {
       "lei_id": "L-10406-2002",
       "fonte": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
-      "extraido_em": "2026-10-14T17:52:36.885255+00:00",
+      "extraido_em": "2026-10-14T17:55:16.570589+00:00",
       "artigos": [
         {
           "artigo": 1,
@@ -2398,7 +2398,7 @@
     {
       "lei_id": "L-12527-2011",
       "fonte": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm",
-      "extraido_em": "2026-10-14T17:52:33.940616+00:00",
+      "extraido_em": "2026-10-14T17:55:14.574554+00:00",
       "artigos": [
         {
           "artigo": 1,
@@ -2597,7 +2597,7 @@
     {
       "lei_id": "L-13105-2015",
       "fonte": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm",
-      "extraido_em": "2026-10-14T17:52:39.971746+00:00",
+      "extraido_em": "2026-10-14T17:55:19.913777+00:00",
       "artigos": [
         {
           "artigo": 1,
@@ -4736,7 +4736,7 @@
     {
       "lei_id": "L-13709-2018",
       "fonte": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
-      "extraido_em": "2026-10-14T17:52:33.014084+00:00",
+      "extraido_em": "2026-10-14T17:55:13.120853+00:00",
       "artigos": [
         {
           "artigo": 1,
@@ -4999,7 +4999,7 @@
     {
       "lei_id": "L-14133-2021",
       "fonte": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm",
-      "extraido_em": "2026-10-14T17:52:29.575244+00:00",
+      "extraido_em": "2026-10-14T17:55:09.447874+00:00",
       "artigos": [
         {
           "artigo": 1,
@@ -5082,7 +5082,7 @@
     {
       "lei_id": "L-8078-1990",
       "fonte": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
-      "extraido_em": "2026-10-14T17:52:40.900290+00:00",
+      "extraido_em": "2026-10-14T17:55:21.413656+00:00",
       "artigos": [
         {
           "artigo": 1,
@@ -5537,7 +5537,7 @@
     {
       "lei_id": "L-8666-1993",
       "fonte": "https://www.planalto.gov.br/ccivil_03/leis/l8666cons.htm",
-      "extraido_em": "2026-10-14T17:52:31.311940+00:00",
+      "extraido_em": "2026-10-14T17:55:11.801398+00:00",
       "artigos": [
         {
           "artigo": 37,
