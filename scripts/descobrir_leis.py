@@ -16,7 +16,7 @@ from urllib.request import Request, urlopen
 
 YEARS = range(2020, 2027)
 def url_indice(ano: int) -> str:
-    inicio = ((ano - 1) // 4) * 4 + 1
+    inicio = ((ano - 2019) // 4) * 4 + 2019
     fim = inicio + 3
     return f"https://www.planalto.gov.br/ccivil_03/_ato{inicio}-{fim}/{ano}/lei/_leis{ano}.htm"
 
@@ -64,26 +64,38 @@ def extrair(html: str, base: str = BASE, ano: int = 2026) -> list[dict]:
 
 
 def main():
-    req = Request(BASE, headers={"User-Agent": "ProjetoLeisResearchBot/0.1 (+https://github.com/douglassnake/projeto-leis)"})
-    with urlopen(req, timeout=40) as response:
-        html = response.read().decode("windows-1252", errors="replace")
-    encontrados = extrair(html)
-    if not encontrados:
-        raise RuntimeError("Nenhuma lei encontrada: manter os dados anteriores e revisar o parser.")
     anterior = json.loads(OUTPUT.read_text(encoding="utf-8")) if OUTPUT.exists() else {}
-    anteriores = {item["id"] for item in anterior.get("leis", [])}
-    novos = [item["id"] for item in encontrados if item["id"] not in anteriores]
+    anteriores = {item["id"]: item for item in anterior.get("leis", [])}
+    consolidados = dict(anteriores)
+    fontes, falhas = [], []
+    for ano in YEARS:
+        url = url_indice(ano)
+        try:
+            req = Request(url, headers={"User-Agent": "ProjetoLeisResearchBot/0.2 (+https://github.com/douglassnake/projeto-leis)"})
+            with urlopen(req, timeout=25) as response:
+                html = response.read().decode("windows-1252", errors="replace")
+            itens = extrair(html, url, ano)
+            if not itens:
+                raise ValueError("índice sem links válidos")
+            consolidados.update({item["id"]: item for item in itens})
+            fontes.append({"ano": ano, "url": url, "registros": len(itens)})
+        except (OSError, ValueError) as exc:
+            falhas.append({"ano": ano, "erro": type(exc).__name__})
+    if not fontes:
+        raise RuntimeError("Nenhum índice acessível; dados anteriores preservados.")
+    novos = sorted(set(consolidados) - set(anteriores))
+    encontrados = sorted(consolidados.values(), key=lambda x: (x["ano"], x["numero"]), reverse=True)
     saida = {
-        "fonte": BASE,
+        "fonte": BASE, "fontes_consultadas": fontes, "falhas": falhas,
         "consultado_em": datetime.now(timezone.utc).isoformat(),
         "tipo": "descoberta_de_referencias",
-        "aviso": "Novos links não comprovam data de publicação, vigência ou texto consolidado.",
+        "aviso": "Links descobertos não comprovam publicação, ementa, texto integral ou vigência.",
         "total": len(encontrados),
-        "novos_desde_ultima_consulta": [] if not anteriores else novos,
+        "novos_desde_ultima_consulta": novos if anteriores else [],
         "leis": encontrados,
     }
     OUTPUT.write_text(json.dumps(saida, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Links encontrados: {len(encontrados)} | novos após base inicial: {len(saida['novos_desde_ultima_consulta'])}")
+    print(f"Índices consultados: {len(fontes)} | registros: {len(encontrados)} | novos: {len(novos)} | falhas: {len(falhas)}")
 
 
 if __name__ == "__main__":
