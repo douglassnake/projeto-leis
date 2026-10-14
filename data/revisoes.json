@@ -1,0 +1,9 @@
+{
+  "tipo": "monitoramento_de_diferencas_tecnicas",
+  "aviso": "Diferença textual NÃO comprova alteração legal. Ausência de artigo NÃO comprova revogação.",
+  "comparado_em": null,
+  "artigos_monitorados": 0,
+  "assinaturas": {},
+  "ausentes_na_extracao": [],
+  "eventos": []
+}
