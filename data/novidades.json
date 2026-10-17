@@ -5,35 +5,40 @@
       "ano": 2020,
       "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/_leis2020.htm",
       "registros": 144
-    }
-  ],
-  "falhas": [
+    },
     {
       "ano": 2021,
-      "erro": "URLError"
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/_leis2021.htm",
+      "registros": 172
     },
     {
       "ano": 2022,
-      "erro": "URLError"
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/_leis2022.htm",
+      "registros": 228
     },
     {
       "ano": 2023,
-      "erro": "URLError"
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/_leis2023.htm",
+      "registros": 275
     },
     {
       "ano": 2024,
-      "erro": "URLError"
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/_leis2024.htm",
+      "registros": 291
     },
     {
       "ano": 2025,
-      "erro": "URLError"
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/_leis2025.htm",
+      "registros": 239
     },
     {
       "ano": 2026,
-      "erro": "URLError"
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/_leis2026.htm",
+      "registros": 205
     }
   ],
-  "consultado_em": "2026-10-16T14:02:39.285782+00:00",
+  "falhas": [],
+  "consultado_em": "2026-10-17T13:00:45.039723+00:00",
   "tipo": "descoberta_de_referencias",
   "aviso": "Links descobertos não comprovam publicação, ementa, texto integral ou vigência.",
   "total": 1554,
