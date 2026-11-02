@@ -1,8 +1,37 @@
 {
   "tipo": "extracao_experimental_de_texto",
   "aviso": "Texto extraído automaticamente para localização; estrutura, integridade, redação e vigência NÃO validadas. Confira fonte oficial.",
-  "gerado_em": "2026-10-26T17:00:01.445254+00:00",
-  "falhas": [],
+  "gerado_em": "2026-11-02T20:30:19.666630+00:00",
+  "falhas": [
+    {
+      "lei_id": "L-14133-2021",
+      "erro": "ValueError"
+    },
+    {
+      "lei_id": "L-8666-1993",
+      "erro": "ValueError"
+    },
+    {
+      "lei_id": "L-13709-2018",
+      "erro": "ValueError"
+    },
+    {
+      "lei_id": "L-12527-2011",
+      "erro": "ValueError"
+    },
+    {
+      "lei_id": "L-10406-2002",
+      "erro": "ValueError"
+    },
+    {
+      "lei_id": "L-13105-2015",
+      "erro": "ValueError"
+    },
+    {
+      "lei_id": "L-8078-1990",
+      "erro": "ValueError"
+    }
+  ],
   "normas": [
     {
       "lei_id": "L-10406-2002",
