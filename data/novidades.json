@@ -34,16 +34,169 @@
     {
       "ano": 2026,
       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/_leis2026.htm",
-      "registros": 205
+      "registros": 224
     }
   ],
   "falhas": [],
-  "consultado_em": "2026-10-27T15:24:47.156907+00:00",
+  "consultado_em": "2026-11-19T18:20:43.847831+00:00",
   "tipo": "descoberta_de_referencias",
   "aviso": "Links descobertos não comprovam publicação, ementa, texto integral ou vigência.",
-  "total": 1554,
-  "novos_desde_ultima_consulta": [],
+  "total": 1573,
+  "novos_desde_ultima_consulta": [
+    "L-15527-2026",
+    "L-15528-2026",
+    "L-15529-2026",
+    "L-15530-2026",
+    "L-15531-2026",
+    "L-15532-2026",
+    "L-15533-2026",
+    "L-15534-2026",
+    "L-15535-2026",
+    "L-15536-2026",
+    "L-15537-2026",
+    "L-15538-2026",
+    "L-15539-2026",
+    "L-15540-2026",
+    "L-15541-2026",
+    "L-15542-2026",
+    "L-15543-2026",
+    "L-15544-2026",
+    "L-15545-2026"
+  ],
   "leis": [
+    {
+      "id": "L-15545-2026",
+      "numero": 15545,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15545.htm",
+      "rotulo": "Lei nº 15.545"
+    },
+    {
+      "id": "L-15544-2026",
+      "numero": 15544,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15544.htm",
+      "rotulo": "Lei nº 15.544"
+    },
+    {
+      "id": "L-15543-2026",
+      "numero": 15543,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15543.htm",
+      "rotulo": "Lei nº 15.543"
+    },
+    {
+      "id": "L-15542-2026",
+      "numero": 15542,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15542.htm",
+      "rotulo": "Lei nº 15.542"
+    },
+    {
+      "id": "L-15541-2026",
+      "numero": 15541,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15541.htm",
+      "rotulo": "Lei nº 15.541"
+    },
+    {
+      "id": "L-15540-2026",
+      "numero": 15540,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15540.htm",
+      "rotulo": "Lei nº 15.540"
+    },
+    {
+      "id": "L-15539-2026",
+      "numero": 15539,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15539.htm",
+      "rotulo": "Lei nº 15.539"
+    },
+    {
+      "id": "L-15538-2026",
+      "numero": 15538,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15538.htm",
+      "rotulo": "Lei nº 15.538"
+    },
+    {
+      "id": "L-15537-2026",
+      "numero": 15537,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15537.htm",
+      "rotulo": "Lei nº 15.537"
+    },
+    {
+      "id": "L-15536-2026",
+      "numero": 15536,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15536.htm",
+      "rotulo": "Lei nº 15.536"
+    },
+    {
+      "id": "L-15535-2026",
+      "numero": 15535,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15535.htm",
+      "rotulo": "Lei nº 15.535"
+    },
+    {
+      "id": "L-15534-2026",
+      "numero": 15534,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15534.htm",
+      "rotulo": "Lei nº 15.534"
+    },
+    {
+      "id": "L-15533-2026",
+      "numero": 15533,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15533.htm",
+      "rotulo": "Lei nº 15.533"
+    },
+    {
+      "id": "L-15532-2026",
+      "numero": 15532,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15532.htm",
+      "rotulo": "Lei nº 15.532"
+    },
+    {
+      "id": "L-15531-2026",
+      "numero": 15531,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15531.htm",
+      "rotulo": "Lei nº 15.531"
+    },
+    {
+      "id": "L-15530-2026",
+      "numero": 15530,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15530.htm",
+      "rotulo": "Lei nº 15.530"
+    },
+    {
+      "id": "L-15529-2026",
+      "numero": 15529,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15529.htm",
+      "rotulo": "Lei nº 15.529"
+    },
+    {
+      "id": "L-15528-2026",
+      "numero": 15528,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15528.htm",
+      "rotulo": "Lei nº 15.528"
+    },
+    {
+      "id": "L-15527-2026",
+      "numero": 15527,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15527.htm",
+      "rotulo": "Lei nº 15.527"
+    },
     {
       "id": "L-15526-2026",
       "numero": 15526,
