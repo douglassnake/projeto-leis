@@ -38,31 +38,11 @@
     }
   ],
   "falhas": [],
-  "consultado_em": "2026-11-19T18:20:43.847831+00:00",
+  "consultado_em": "2026-11-20T17:51:39.274015+00:00",
   "tipo": "descoberta_de_referencias",
   "aviso": "Links descobertos não comprovam publicação, ementa, texto integral ou vigência.",
   "total": 1573,
-  "novos_desde_ultima_consulta": [
-    "L-15527-2026",
-    "L-15528-2026",
-    "L-15529-2026",
-    "L-15530-2026",
-    "L-15531-2026",
-    "L-15532-2026",
-    "L-15533-2026",
-    "L-15534-2026",
-    "L-15535-2026",
-    "L-15536-2026",
-    "L-15537-2026",
-    "L-15538-2026",
-    "L-15539-2026",
-    "L-15540-2026",
-    "L-15541-2026",
-    "L-15542-2026",
-    "L-15543-2026",
-    "L-15544-2026",
-    "L-15545-2026"
-  ],
+  "novos_desde_ultima_consulta": [],
   "leis": [
     {
       "id": "L-15545-2026",
