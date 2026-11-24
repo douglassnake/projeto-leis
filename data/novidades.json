@@ -38,20 +38,11 @@
     }
   ],
   "falhas": [],
-  "consultado_em": "2026-11-23T21:29:47.795441+00:00",
+  "consultado_em": "2026-11-24T20:12:49.017895+00:00",
   "tipo": "descoberta_de_referencias",
   "aviso": "Links descobertos não comprovam publicação, ementa, texto integral ou vigência.",
   "total": 1581,
-  "novos_desde_ultima_consulta": [
-    "L-15546-2026",
-    "L-15547-2026",
-    "L-15548-2026",
-    "L-15549-2026",
-    "L-15550-2026",
-    "L-15551-2026",
-    "L-15552-2026",
-    "L-15553-2026"
-  ],
+  "novos_desde_ultima_consulta": [],
   "leis": [
     {
       "id": "L-15553-2026",
