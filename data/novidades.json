@@ -34,16 +34,33 @@
     {
       "ano": 2026,
       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/_leis2026.htm",
-      "registros": 232
+      "registros": 234
     }
   ],
   "falhas": [],
-  "consultado_em": "2026-11-26T19:05:35.492106+00:00",
+  "consultado_em": "2026-11-27T19:02:03.917297+00:00",
   "tipo": "descoberta_de_referencias",
   "aviso": "Links descobertos não comprovam publicação, ementa, texto integral ou vigência.",
-  "total": 1581,
-  "novos_desde_ultima_consulta": [],
+  "total": 1583,
+  "novos_desde_ultima_consulta": [
+    "L-15554-2026",
+    "L-15555-2026"
+  ],
   "leis": [
+    {
+      "id": "L-15555-2026",
+      "numero": 15555,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15555.htm",
+      "rotulo": "Lei nº 15.555"
+    },
+    {
+      "id": "L-15554-2026",
+      "numero": 15554,
+      "ano": 2026,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15554.htm",
+      "rotulo": "Lei nº 15.554"
+    },
     {
       "id": "L-15553-2026",
       "numero": 15553,
